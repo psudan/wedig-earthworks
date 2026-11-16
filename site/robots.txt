@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://wedigearthworks.co.za/sitemap.xml
