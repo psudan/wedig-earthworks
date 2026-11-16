@@ -1,0 +1,9 @@
+---
+# cPanel Git deployment: copies the contents of site/ into the live web root.
+# Runs when "Deploy HEAD Commit" is clicked in cPanel > Git Version Control
+# (or when a deploy is triggered through the cPanel API).
+# Files in public_html that are not in site/ are left untouched.
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/wedigear/public_html/
+    - /bin/cp -R site/. $DEPLOYPATH
