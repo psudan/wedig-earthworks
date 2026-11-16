@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>WeDig Earthworks</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="5-ton CAT excavator hire with an experienced operator. Site preparation, trenching, land clearing and access roads for vineyards, farms, estates and contractors in Stellenbosch and the Western Cape.">
+<meta name="description" content="5-ton CAT excavator hire with an experienced operator. Vineyard cleaning, site preparation, trenching, land clearing and access roads for vineyards, farms, estates and contractors in Stellenbosch and the Western Cape.">
 <meta name="theme-color" content="#0d0d0c">
 <link rel="canonical" href="https://wedigearthworks.co.za/">
 <meta property="og:type" content="website">
@@ -133,6 +133,14 @@ section{padding-block:clamp(72px,9vw,128px)}
 .svc:hover::before{width:72px}
 .svc svg{width:40px;height:40px;color:var(--cat);margin-bottom:8px}
 .svc p{margin:0;color:var(--dust);font-size:.98rem}
+.svc-feature{grid-column:1/-1;padding:0;grid-template-columns:1.25fr 1fr;gap:0;align-items:stretch}
+.svc-feature figure{margin:0;min-height:0;overflow:hidden}
+.svc-feature img{width:100%;height:100%;min-height:340px;max-height:460px;object-fit:cover;object-position:35% 55%}
+.svc-feature .svc-body{display:grid;gap:12px;align-content:center;justify-items:start;padding:clamp(28px,4vw,48px)}
+.svc-feature h3{font-size:clamp(1.5rem,2.6vw,2.1rem)}
+.svc-feature .svc-body p:not(.label){font-size:1.05rem;max-width:44ch}
+.svc-feature .btn{margin-top:8px}
+.svc-feature .svc-body p.label{color:var(--cat);font-size:.74rem}
 
 /* machine */
 .machine{background:var(--coal)}
@@ -237,6 +245,8 @@ footer{border-top:1px solid var(--line);padding-block:44px calc(44px + env(safe-
   .brand img{height:46px}
   .nav{min-height:68px}
   .services-grid{grid-template-columns:1fr}
+  .svc-feature{grid-template-columns:1fr}
+  .svc-feature img{min-height:0;height:auto;aspect-ratio:4/3}
   .steps{grid-template-columns:1fr}
   .step,.step+.step{padding:24px 0;border-left:0}
   .step+.step{border-top:1px solid var(--line)}
@@ -318,6 +328,16 @@ footer{border-top:1px solid var(--line);padding-block:44px calc(44px + env(safe-
         <p class="lede">From farms and vineyards to building sites, we take on the excavation work that has to be done properly before anything else can start.</p>
       </div>
       <div class="services-grid">
+      <article class="svc svc-feature">
+        <figure><img src="assets/vineyard-cleaning.jpeg" alt="WeDig CAT excavator clearing an overgrown vineyard block, with the Simonsberg mountains behind" width="1600" height="1200" loading="lazy"></figure>
+        <div class="svc-body">
+          <p class="label">Vineyards · Featured</p>
+          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 4v6M20 8c3-4 8-4 10-2"/><circle cx="14" cy="15" r="3.5"/><circle cx="21" cy="15" r="3.5"/><circle cx="28" cy="15" r="3.5"/><circle cx="17.5" cy="21.5" r="3.5"/><circle cx="24.5" cy="21.5" r="3.5"/><circle cx="21" cy="28" r="3.5"/></svg>
+          <h3>Vineyard cleaning</h3>
+          <p>Clearing overgrown and old vineyard blocks. We take out brush, weeds, old vines and their roots, and leave clean ground that's ready for replanting.</p>
+          <a class="btn ghost" href="https://wa.me/27728929274?text=Hi%20WeDig%2C%20I%27d%20like%20a%20quote%20for%20vineyard%20cleaning." target="_blank" rel="noopener">Quote for vineyard cleaning</a>
+        </div>
+      </article>
         <article class="svc">
           <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" aria-hidden="true"><path d="M3 30h34M3 24h14l5-6h15"/><path d="M8 30v-6M14 30v-6"/></svg>
           <h3>Site preparation</h3>
@@ -446,6 +466,7 @@ footer{border-top:1px solid var(--line);padding-block:44px calc(44px + env(safe-
         <div class="row2">
           <div class="field"><label for="service">Work needed</label>
             <select id="service" name="service">
+              <option>Vineyard cleaning</option>
               <option>Site preparation</option>
               <option>Trenching</option>
               <option>Landscaping &amp; contouring</option>
