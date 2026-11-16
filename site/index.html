@@ -157,8 +157,10 @@ section{padding-block:clamp(72px,9vw,128px)}
 .sectors{padding:0;margin:0}
 .area{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(32px,6vw,80px);align-items:end}
 .area-copy{display:grid;gap:22px}
-.area-mark{font-family:var(--display);font-stretch:125%;font-weight:900;text-transform:uppercase;font-size:clamp(1.7rem,6vw,4.6rem);line-height:.92;color:transparent;overflow-wrap:anywhere;-webkit-text-stroke:1.5px var(--cat);text-stroke:1.5px var(--cat)}
-.area-mark small{display:block;font-size:.32em;letter-spacing:.06em;-webkit-text-stroke:0;color:var(--dust);margin-top:14px;font-stretch:100%;font-weight:600}
+.area-mark{container-type:inline-size;margin:0;min-width:0}
+/* "Stellenbosch" is ~10.8x its font size wide: 9cqi fills ~97% of the column, never wraps */
+.area-word{display:block;white-space:nowrap;font-family:var(--display);font-stretch:125%;font-weight:900;text-transform:uppercase;font-size:7.4vw;font-size:9cqi;line-height:1;color:transparent;-webkit-text-stroke:1.5px var(--cat)}
+.area-mark small{display:block;font:600 clamp(.85rem,1.6vw,1.1rem)/1.4 var(--body);letter-spacing:.06em;text-transform:uppercase;color:var(--dust);margin-top:14px}
 
 /* gallery */
 .gallery{padding-top:0}
@@ -385,7 +387,7 @@ footer{border-top:1px solid var(--line);padding-block:44px calc(44px + env(safe-
           <li>Vineyards</li><li>Agriculture</li><li>Farms</li><li>Estates</li><li>Construction</li><li>Civil contractors</li><li>Landscapers</li>
         </ul>
       </div>
-      <p class="area-mark" aria-label="Based in Stellenbosch, working across the Western Cape">Stellenbosch<small>&amp; surrounding areas · Western Cape</small></p>
+      <p class="area-mark"><span class="area-word">Stellenbosch</span><small>&amp; surrounding areas · Western Cape</small></p>
     </div>
   </section>
 
